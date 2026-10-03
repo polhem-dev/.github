@@ -1,0 +1,39 @@
+{
+  "$comment": "The settings every repository of polhem-dev shares. CONTRIBUTING.md in this repository describes the collaboration model they implement. Audited and applied by the org-baseline skill of the dev-workflow plugin (jeff377/claude-plugins).",
+  "settings": {
+    "allow_squash_merge": true,
+    "allow_merge_commit": false,
+    "allow_rebase_merge": false,
+    "allow_auto_merge": true,
+    "delete_branch_on_merge": true
+  },
+  "protection": {
+    "strict": true,
+    "enforce_admins": true,
+    "required_approving_review_count": 0,
+    "require_code_owner_reviews": false,
+    "allow_force_pushes": false,
+    "allow_deletions": false
+  },
+  "codeowners": "* @jeff377",
+  "repos": {
+    "polhem": {
+      "required_checks": ["build", "docs"]
+    },
+    "polhem-jsonrpc": {
+      "required_checks": ["build", "docs", "aot"]
+    },
+    "polhem-oauth2": {
+      "required_checks": ["build (windows-latest)", "build (ubuntu-latest)", "build (macos-latest)"]
+    },
+    "polhem-connector-js": {
+      "required_checks": ["build (20)", "build (22)"]
+    },
+    "polhem-northwind": {
+      "required_checks": ["Build (Server / UI / Desktop / Browser / Android)", "Build (iOS)"]
+    }
+  },
+  "excluded": {
+    ".github": "The organization profile and shared documents. It has no build, so there is no check to require."
+  }
+}
