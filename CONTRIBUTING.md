@@ -27,3 +27,19 @@ their own pull request.
 Every repository is set up the same way, from [`repo-baseline.json`](repo-baseline.json) in this repository: the merge
 methods, the protection of `main`, its required checks, and the code owner. A repository that differs is either listed
 there as an exception, with the reason, or brought back in line.
+
+Why the shared settings are what they are:
+
+- **Squash merges only, branches deleted on merge.** One pull request becomes one commit on `main`.
+- **A pull request is required, with no approval.** A required approval would block every pull request the maintainer
+  opens, because GitHub does not let an author approve their own; contributors without write access cannot merge
+  anyway.
+- **The rules apply to administrators too.** Nobody pushes to `main` directly, the maintainer included.
+- **The branch must be up to date with `main`, and `main` cannot be force-pushed or deleted.**
+- **Auto-merge is allowed.** It merges as the person who enabled it, so the push to `main` starts workflows normally
+  and no token is needed.
+- **A required check must start on every pull request.** A workflow whose `pull_request` trigger has a `paths` or
+  `paths-ignore` filter never reports on a pull request outside it, and that pull request waits forever. A repository
+  that skips documentation-only changes detects them inside each job, which then reports success.
+- **A required check is named after its job**, including the matrix values (`build (ubuntu-latest)`). Renaming a job
+  means changing the baseline too.
