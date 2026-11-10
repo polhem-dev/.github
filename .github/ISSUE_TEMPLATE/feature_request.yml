@@ -17,6 +17,13 @@ body:
     validations:
       required: true
   - type: textarea
+    id: media
+    attributes:
+      label: Mockups or screenshots
+      description: |
+        For a UI change, attach a screenshot of the current screen marked up with the change, a mockup, or a short
+        screen recording. Drag the files into this box.
+  - type: textarea
     id: alternatives
     attributes:
       label: Alternatives considered

@@ -31,6 +31,13 @@ body:
         3.
     validations:
       required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or screen recording
+      description: |
+        For a problem you can see in the UI, attach a screenshot cropped to the problem, or a short screen recording
+        that shows the steps. Drag the files into this box. Hide personal data before attaching.
   - type: input
     id: version
     attributes:
