@@ -1,0 +1,52 @@
+name: Bug report
+description: Something does not work as documented.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. Please search the existing issues first.
+        To report a security vulnerability, do not open a public issue: contact the maintainer privately instead.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you saw, including the full error message or exception if there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The smallest code, configuration or sequence of steps that shows the problem.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The package version, or the commit, where you see the problem.
+      placeholder: e.g. 1.2.0
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, runtime (.NET SDK or Node.js version), database, browser or device, as relevant.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or stack trace
+      description: Remove keys, tokens, passwords and connection strings before pasting.
+      render: text
