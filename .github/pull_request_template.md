@@ -12,12 +12,13 @@
 
 ## Screenshots
 
-<!-- For a UI change, attach before and after screenshots, or a short screen recording of the interaction.
+<!-- Required when this changes the UI or fixes a UI issue: attach before and after screenshots cropped to the
+     change, or a short screen recording when the fix is about an interaction (focus, keys, dialogs, animation).
      Delete this section otherwise. -->
 
 ## Checklist
 
 - [ ] The change has tests, or the summary says why it does not need them.
 - [ ] Public API changes are declared, and any breaking change is called out in the summary.
-- [ ] UI changes have before and after screenshots or a recording above.
+- [ ] UI changes and fixes to UI issues have before and after screenshots or a recording above.
 - [ ] Documentation is updated, including its translations where the repository keeps them.
