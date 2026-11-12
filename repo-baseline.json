@@ -18,7 +18,7 @@
   "codeowners": "* @jeff377",
   "repos": {
     "polhem": {
-      "required_checks": ["build", "docs"]
+      "required_checks": ["build", "templates", "docs"]
     },
     "polhem-jsonrpc": {
       "required_checks": ["build", "docs", "aot"]
