@@ -35,7 +35,11 @@ Why the shared settings are what they are:
   opens, because GitHub does not let an author approve their own; contributors without write access cannot merge
   anyway.
 - **The rules apply to administrators too.** Nobody pushes to `main` directly, the maintainer included.
-- **The branch must be up to date with `main`, and `main` cannot be force-pushed or deleted.**
+- **The branch must be up to date with `main`, and `main` cannot be force-pushed or deleted.** A repository with many
+  pull requests open at once merges through GitHub's merge queue instead, and turns this requirement off there: the
+  queue tests `main` with the pull requests queued ahead and this one, so every merge is tested as it lands, and a
+  merge does not leave the others to be updated and run again. Its required checks must also run on the
+  `merge_group` event. The repositories that use the queue are the ones with `merge_queue` in the baseline.
 - **Auto-merge is allowed.** It merges as the person who enabled it, so the push to `main` starts workflows normally
   and no token is needed.
 - **A required check must start on every pull request.** A workflow whose `pull_request` trigger has a `paths` or
