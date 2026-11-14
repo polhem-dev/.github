@@ -18,7 +18,17 @@
   "codeowners": "* @jeff377",
   "repos": {
     "polhem": {
-      "required_checks": ["build", "templates", "docs"]
+      "required_checks": ["build", "templates", "browser", "docs"],
+      "protection": { "strict": false },
+      "merge_queue": {
+        "merge_method": "SQUASH",
+        "max_entries_to_build": 5,
+        "min_entries_to_merge": 1,
+        "max_entries_to_merge": 1,
+        "min_entries_to_merge_wait_minutes": 0,
+        "grouping_strategy": "ALLGREEN",
+        "check_response_timeout_minutes": 60
+      }
     },
     "polhem-jsonrpc": {
       "required_checks": ["build", "docs", "aot"]
