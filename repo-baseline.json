@@ -41,6 +41,9 @@
     },
     "polhem-northwind": {
       "required_checks": ["Build (Server / UI / Desktop / Browser / Android)", "Build (iOS)"]
+    },
+    "polhem-markdown": {
+      "required_checks": []
     }
   },
   "excluded": {
