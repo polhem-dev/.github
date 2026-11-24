@@ -44,6 +44,9 @@
     },
     "polhem-markdown": {
       "required_checks": ["build", "docs", "aot", "sonarcloud"]
+    },
+    "polhem-chat": {
+      "required_checks": ["build", "docs"]
     }
   },
   "excluded": {
