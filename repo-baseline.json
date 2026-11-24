@@ -46,7 +46,7 @@
       "required_checks": ["build", "docs", "aot", "sonarcloud"]
     },
     "polhem-chat": {
-      "required_checks": ["build", "docs"]
+      "required_checks": ["build", "docs", "sonarcloud"]
     }
   },
   "excluded": {
