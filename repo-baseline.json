@@ -43,7 +43,7 @@
       "required_checks": ["Build (Server / UI / Desktop / Browser / Android)", "Build (iOS)"]
     },
     "polhem-markdown": {
-      "required_checks": ["build", "docs", "aot", "sonarcloud"]
+      "required_checks": ["build", "docs", "aot", "wasm", "sonarcloud"]
     },
     "polhem-chat": {
       "required_checks": ["build", "docs", "sonarcloud"]
