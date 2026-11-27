@@ -1,8 +1,8 @@
 # Polhem
 
-[English](https://github.com/polhem-dev) 
+[English](https://github.com/polhem-dev) | **繁體中文**
+
 <img src="images/polhem-banner.png" alt="Polhem：一份定義驅動 UI、資料庫結構與驗證" width="100%">
-| **繁體中文**
 
 模組化的 .NET 框架，用來建構定義驅動的商業應用程式。
 
