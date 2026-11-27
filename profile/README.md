@@ -1,6 +1,8 @@
 # Polhem
 
-**English** | [繁體中文](https://github.com/polhem-dev/.github/blob/main/profile/README.zh-TW.md)
+**English** 
+<img src="images/polhem-banner.png" alt="Polhem: one definition drives UI, schema and validation" width="100%">
+| [繁體中文](https://github.com/polhem-dev/.github/blob/main/profile/README.zh-TW.md)
 
 A modular .NET framework for building definition-driven business applications.
 
