@@ -15,6 +15,12 @@
 - **[Polhem.OAuth2](https://github.com/polhem-dev/polhem-oauth2)**：輕量的 .NET OAuth2 登入套件，支援 Google、Facebook、LINE、
   Microsoft Entra ID、Auth0、Okta。桌面與主控台應用程式透過系統瀏覽器登入，也支援 ASP.NET Core 與 ASP.NET。
   前身是 Bee.OAuth2。[NuGet](https://www.nuget.org/packages/Polhem.OAuth2)
+- **[Polhem.Markdown](https://github.com/polhem-dev/polhem-markdown)**：Avalonia 與 Blazor 的 Markdown 檢視器與原始碼編輯器。
+  共用一個以 Markdig 實作的套件負責剖析與安全政策，兩邊的檢視器因此把同一段文字呈現得一樣；各 UI 套件另提供附目錄的閱讀器
+  與原始碼編輯器。[NuGet](https://www.nuget.org/packages?q=Polhem.Markdown)
+- **[Polhem.Chat](https://github.com/polhem-dev/polhem-chat)**：Avalonia 的 AI 對話控制項與 Blazor 的對話元件，建立在任何
+  Microsoft.Extensions.AI 的 `IChatClient` 之上：串流回覆以 Markdown 呈現、即時顯示模型的推理與工具呼叫、每輪的耗時與
+  token 用量，並可停止與複製。不綁定任何模型供應商。[NuGet](https://www.nuget.org/packages?q=Polhem.Chat)
 
 ## 名稱由來
 
